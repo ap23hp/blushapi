@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>makeup</title>
+     <!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+
+<style>
+
+    body{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1-ia6hZVR4NswTujH9tXf_pzrOantT5Fe_w&usqp=CAU") ;
+
+        background-repeat:repeat-x;
+        background-color: #201e17;
+        
+  
+        
+    }
+    .user-pic{
+        height:200px;
+        width: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+
+        
+        }
+        .user-container{
+            background-image: linear-gradient(to right,#d16ba5,#c777b9,#ba83ca,#aa8fd8,#9a9ae1,#8aa7ec,#79b3f4,#69bff8,#52cffe,#41dfff,#46eefa,#5ffbf1);
+            padding: 16px;
+            border-radius: 20px;
+            width:600px;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            
+            gap:10px;
+            margin-top: 70px;
+
+           
+        
+        }
+        .user-name{
+            color: white;
+            font-size: 1.5rem;
+        }
+        .user-list{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            align-items: center;
+        }
+        .user-brand{
+            font-size:22px;
+           
+            margin: 0;
+        
+            color:rgb(201, 71, 38);
+            font-family: 'Hubballi', cursive;
+        }
+       
+
+        .btn{
+            width:150px;
+            height:60px;
+            color:teal;
+            background-color: #201e17;
+            border-radius: 60%;
+            border: none;
+            background-color: black;
+        }
+        .btn:hover{
+            cursor: pointer;
+            background-color: transparent;
+            color:crimson;
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+        }
+
+        .edit-user-container{
+            display: none;
+           color:whitesmoke;
+        
+           
+           
+        }
+        .pagination{
+            display:flex;
+            flex-direction:row;
+            gap:10px;
+            align-items: center;
+            margin-top: 10px;
+            justify-content: center;
+         
+        }
+        .pagination>button{
+color:pink;
+border-radius: 50%;
+width:40px;
+height:40px;
+background-color:#c5639f;
+font-weight: bold;
+
+
+        }
+        .pagination>button:hover{
+            cursor: pointer;
+        }
+        .user-product-link:hover{
+            color:red;
+            cursor: pointer;
+        }
+
+
+        .navbar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+        position:fixed;
+             top:10;
+          }
+          
+          /* Navbar links */
+          .navbar a {
+            float: left;
+            text-align: center;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+          }
+          
+          /* Navbar links on mouse-over */
+          .navbar a:hover {
+            background-color: #000;
+          }
+          
+          /* Current/active navbar link */
+          .active {
+            background-color: #833be0;
+          }
+          
+          /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+          @media screen and (max-width: 500px) {
+            .navbar a {
+              float: none;
+              display: block;
+            }
+
+          }
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+<div class="header"></div>
+</div>
+<div class="user-list">
+
+
+</div>
+<div class="pagination"></div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
